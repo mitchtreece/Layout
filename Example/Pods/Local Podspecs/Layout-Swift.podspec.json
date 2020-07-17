@@ -1,0 +1,49 @@
+{
+  "name": "Layout-Swift",
+  "module_name": "Layout",
+  "version": "1.0.0",
+  "summary": "Swift Autolayout DSL for iOS & macOS",
+  "description": "Swift Autolayout DSL for iOS & macOS.",
+  "homepage": "https://github.com/mitchtreece/Layout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mitch Treece": "mitchtreece@me.com"
+  },
+  "source": {
+    "git": "https://github.com/mitchtreece/Layout.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Layout/Classes/Core/**/*"
+    },
+    {
+      "name": "Shorthand",
+      "dependencies": {
+        "Layout-Swift/Core": [
+
+        ]
+      },
+      "source_files": "Layout/Classes/Shorthand/**/*"
+    },
+    {
+      "name": "All",
+      "dependencies": {
+        "Layout-Swift/Core": [
+
+        ],
+        "Layout-Swift/Shorthand": [
+
+        ]
+      }
+    }
+  ]
+}

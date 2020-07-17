@@ -1,0 +1,21 @@
+PODS:
+  - Layout-Swift/All (1.0.0):
+    - Layout-Swift/Core
+    - Layout-Swift/Shorthand
+  - Layout-Swift/Core (1.0.0)
+  - Layout-Swift/Shorthand (1.0.0):
+    - Layout-Swift/Core
+
+DEPENDENCIES:
+  - Layout-Swift/All (from `../`)
+
+EXTERNAL SOURCES:
+  Layout-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Layout-Swift: 92866f9e789ea89c0e1450114eec6d0af6b4af9e
+
+PODFILE CHECKSUM: 7c54aa080f6ce32e6314509bdae55fc5fe77346a
+
+COCOAPODS: 1.9.3
