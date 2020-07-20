@@ -18,25 +18,26 @@ private struct AssociatedKeys {
 public protocol Layoutable: class {
     
     var superview: View? { get }
-    var constraints: [NSLayoutConstraint] { get }
+    var constraints: [LayoutConstraint] { get }
     var translatesAutoresizingMaskIntoConstraints: Bool { get set }
 
-    var leftAnchor: NSLayoutXAxisAnchor { get }
-    var rightAnchor: NSLayoutXAxisAnchor { get }
-    var leadingAnchor: NSLayoutXAxisAnchor { get }
-    var trailingAnchor: NSLayoutXAxisAnchor { get }
-    var topAnchor: NSLayoutYAxisAnchor { get }
-    var bottomAnchor: NSLayoutYAxisAnchor { get }
-    var centerXAnchor: NSLayoutXAxisAnchor { get }
-    var centerYAnchor: NSLayoutYAxisAnchor { get }
-    var widthAnchor: NSLayoutDimension { get }
-    var heightAnchor: NSLayoutDimension { get }
+    var leftAnchor: LayoutAxisAnchorX { get }
+    var rightAnchor: LayoutAxisAnchorX { get }
+    var leadingAnchor: LayoutAxisAnchorX { get }
+    var trailingAnchor: LayoutAxisAnchorX { get }
+    var topAnchor: LayoutAxisAnchorY { get }
+    var bottomAnchor: LayoutAxisAnchorY { get }
+    var centerXAnchor: LayoutAxisAnchorX { get }
+    var centerYAnchor: LayoutAxisAnchorY { get }
+    var widthAnchor: LayoutDimensionAnchor { get }
+    var heightAnchor: LayoutDimensionAnchor { get }
+    
     var safeAreaLayoutGuide: LayoutGuide { get }
     
-    func addConstraint(_ constraint: NSLayoutConstraint)
-    func addConstraints(_ constraints: [NSLayoutConstraint])
-    func removeConstraint(_ constraint: NSLayoutConstraint)
-    func removeConstraints(_ constraints: [NSLayoutConstraint])
+    func addConstraint(_ constraint: LayoutConstraint)
+    func addConstraints(_ constraints: [LayoutConstraint])
+    func removeConstraint(_ constraint: LayoutConstraint)
+    func removeConstraints(_ constraints: [LayoutConstraint])
     
     func setContentHuggingPriority(_ priority: LayoutPriority, for axis: LayoutAxis)
     func setContentCompressionResistancePriority(_ priority: LayoutPriority, for axis: LayoutAxis)

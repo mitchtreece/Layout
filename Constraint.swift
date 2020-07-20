@@ -9,11 +9,45 @@ import Foundation
 
 public class Constraint {
     
-    public let constraint: NSLayoutConstraint
+    public enum ConstraintType: Hashable {
+            
+        public enum HorizontalType {
+            
+            case left
+            case right
+            case leading
+            case trailing
+            case center
+            
+        }
+        
+        public enum VerticalType {
+            
+            case top
+            case bottom
+            case center
+            
+        }
+        
+        public enum DimensionType {
+            
+            case width
+            case height
+            
+        }
+        
+        case horizontal(HorizontalType)
+        case vertical(VerticalType)
+        case dimension(DimensionType)
+        
+    }
+
+    
+    public let constraint: LayoutConstraint
     public let type: ConstraintType
     public let key: String?
     
-    internal init(_ constraint: NSLayoutConstraint,
+    internal init(_ constraint: LayoutConstraint,
                   type: ConstraintType,
                   key: String?) {
         

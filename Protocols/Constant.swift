@@ -11,7 +11,11 @@ private struct AssociatedKeys {
     static var negated: UInt8 = 0
 }
 
+// MARK: Protocol
+
 public protocol Constant: DimensionalConstraintTarget {}
+
+// MARK: Extensions
 
 extension CGFloat: Constant {}
 extension Float: Constant {}

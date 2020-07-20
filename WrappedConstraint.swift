@@ -15,7 +15,7 @@ public class WrappedConstraint {
         return self._constraint?.constraint
     }
     
-    public var type: ConstraintType? {
+    public var type: Constraint.ConstraintType? {
         return self._constraint?.type
     }
     

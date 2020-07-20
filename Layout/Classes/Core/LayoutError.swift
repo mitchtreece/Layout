@@ -7,12 +7,9 @@
 
 import Foundation
 
-public enum ScrewdriverError: Error {
+public enum LayoutError: Error {
     
-    case notImplemented
-    case invalidLayoutAnchor
-    case invalidConstraintProvider
+    case invalidConstraintSource
     case invalidConstraintTarget
-    case constraintNotFound
     
 }
