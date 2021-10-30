@@ -42,7 +42,6 @@ public class Constraint {
         
     }
 
-    
     public let constraint: LayoutConstraint
     public let type: ConstraintType
     public let key: String?

@@ -65,7 +65,7 @@
 		0EB81DE36E8AAB5E312AD0D1E19816B8 /* WrappedConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WrappedConstraint.swift; sourceTree = "<group>"; };
 		0F01EEA072FE026B43C29F1B70878FD7 /* Pods-Layout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Layout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		17090AA20C400A6FD6757148CE3182AE /* ConstraintUpdatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConstraintUpdatable.swift; sourceTree = "<group>"; };
-		2644E79624C269A200E5011F /* LayoutError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutError.swift; path = Layout/Classes/Core/LayoutError.swift; sourceTree = "<group>"; };
+		2644E79624C269A200E5011F /* LayoutError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutError.swift; sourceTree = "<group>"; };
 		2644E79824C269C900E5011F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		267DF10F24C2D10E006B253C /* Axis+Shorthand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Axis+Shorthand.swift"; sourceTree = "<group>"; };
 		267DF11124C2D2FC006B253C /* LayoutAxis+Shorthand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutAxis+Shorthand.swift"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F9D5C4AED4ABB823EBAA60B88A403BB /* RectEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RectEdgeInsets.swift; sourceTree = "<group>"; };
 		A03FEA1CE620BCA6FCC45F3E0EAF5940 /* Axis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
-		A8A9CCB285680F055049A1FFCF113F11 /* LayoutMaker+Shorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutMaker+Shorthand.swift"; path = "Layout/Classes/Shorthand/LayoutMaker+Shorthand.swift"; sourceTree = "<group>"; };
+		A8A9CCB285680F055049A1FFCF113F11 /* LayoutMaker+Shorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "LayoutMaker+Shorthand.swift"; sourceTree = "<group>"; };
 		ACD7A4B240774A1FEF0C22D7659C095B /* Pods-Layout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Layout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AF9403DD3FEC22907BF7D330F6807258 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CD8D5BE042ADDB07D9FD99E1366352E8 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
@@ -188,6 +188,7 @@
 				267DF11524C2D40D006B253C /* RectEdgeInsets+Shorthand.swift */,
 			);
 			name = Shorthand;
+			path = Layout/Classes/Shorthand;
 			sourceTree = "<group>";
 		};
 		76F4B2B4A187AE40165109E2F4161E9D /* Pod */ = {
@@ -228,6 +229,7 @@
 				E47940A2E48CAE2C758425A5234854B3 /* Types */,
 			);
 			name = Core;
+			path = Layout/Classes/Core;
 			sourceTree = "<group>";
 		};
 		AFDB28B1396F3983B97861DDEF916A54 /* Layout-Swift */ = {
@@ -312,8 +314,7 @@
 				9F9D5C4AED4ABB823EBAA60B88A403BB /* RectEdgeInsets.swift */,
 				267DF11724C36D2D006B253C /* LayoutAnchorContainer.swift */,
 			);
-			name = Types;
-			path = Layout/Classes/Core/Types;
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
